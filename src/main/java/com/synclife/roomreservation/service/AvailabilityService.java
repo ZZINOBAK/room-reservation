@@ -23,7 +23,6 @@ public class AvailabilityService {
         List<Map<String, Object>> rooms = appRepository.findAllRooms();
         List<Map<String, Object>> reservations = appRepository.findReservationByDate(dayStart, nextDayStart);
 
-//        new LinkedHashMap<>();
         Map<Long, List<TimeSlot>> byRoom = new HashMap<>();
 
         for (Map<String, Object> r : reservations) {

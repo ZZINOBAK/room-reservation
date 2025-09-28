@@ -7,9 +7,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RoomDTO {
 
-    private final Long roomId;
     private final String roomName;
-    private final String userId;
+    private final int userId;
     private final String location;
     private final int capacity;
 }

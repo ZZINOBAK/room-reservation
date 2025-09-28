@@ -7,13 +7,11 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class CreateService {
+public class RoomService {
 
     private final AppRepository appRepository;
 
-
-    public void createRoom(long userId, RoomDTO req){
-        appRepository.createRoom(req.getRoomName(),
-                userId, req.getLocation(), req.getCapacity());
+    public void createRoom(int userId, RoomDTO req) {
+        appRepository.createRoom(req.getRoomName(), userId, req.getLocation(), req.getCapacity());
     }
 }
