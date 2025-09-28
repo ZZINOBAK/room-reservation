@@ -34,7 +34,7 @@ docker compose up --build
 
 ---
 
-## LLM 사용 정책
+## LLM 사용
 
 본 프로젝트는 과제 수행 중 LLM(ChatGPT)을 **도우미로 활용**하였습니다.  
 - **사용한 구간**:
